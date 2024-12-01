@@ -118,12 +118,15 @@ Authorization: Bearer token"
             disabled={!url}
           >
             <Copy className="w-4 h-4 mr-2" />
-            Generate & Copy Curl Command
+            Generate Curl
           </Button>
 
           {url && (
-            <pre className="p-4 bg-muted rounded-lg overflow-x-auto whitespace-pre-wrap break-all">
+            <pre className="p-4 bg-muted rounded-lg overflow-x-auto whitespace-pre-wrap break-all flex flex-col">
               <code>{generateCurl()}</code>
+              <div className="text-right items-center flex justify-end mt-4">
+                <Clipboard onClick={copyToClipboard} className='cursor-pointer w-4 h-4' />
+              </div>
             </pre>
           )}
         </div>
