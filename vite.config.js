@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base:'/curlgenerator/',
+  // base:'/curlgenerator/',
   plugins: [react()],
   resolve: {
     alias: {
