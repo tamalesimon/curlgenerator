@@ -6,7 +6,7 @@ import CurlGenerator from './component/CurlGenerator'
 function App() {
 
   return (
-    <div className="mt-32">
+    <div className="mt-16">
       <CurlGenerator/>
       <Toaster/>
     </div>
